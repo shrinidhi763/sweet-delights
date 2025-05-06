@@ -1,0 +1,165 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Delights Bakery</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff7fa;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #ff9ebc;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #ff9ebc, #ffc0cb);
+      padding: 5rem 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .section-title {
+      color: #e75480;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .product-card img {
+      border-radius: 10px;
+    }
+    .testimonial {
+      font-style: italic;
+    }
+    footer {
+      background-color: #ff9ebc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sweet Delights</a>
+      <div>
+        <a class="nav-link d-inline" href="#about">About</a>
+        <a class="nav-link d-inline" href="#products">Products</a>
+        <a class="nav-link d-inline" href="#testimonials">Testimonials</a>
+        <a class="nav-link d-inline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1 data-aos="fade-up">Homemade Happiness in Every Bite</h1>
+      <p data-aos="fade-up" data-aos-delay="200">Delicious cakes, cookies, and cupcakes — made with love in Jaipur</p>
+      <a href="#products" class="btn btn-light mt-3">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="container py-5" id="about">
+    <h2 class="section-title text-center">About Us</h2>
+    <p class="text-center mx-auto" style="max-width: 700px;">
+      Sweet Delights is a home bakery started by Priya Sharma, offering freshly made cakes and treats in Jaipur. We use only high-quality ingredients and a whole lot of love in every bite!
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section class="container py-5" id="products">
+    <h2 class="section-title text-center">Our Products</h2>
+    <div class="row g-4 mt-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card product-card">
+          <img src="chocolate-cake.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chocolate Truffle Cake</h5>
+            
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card product-card">
+          <img src="chocochip-cookie.jpg" class="card-img-top" alt="Cookies">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chunky Choco Chip Cookies</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card product-card">
+          <img src="vanilla-cupcake.jpg" class="card-img-top" alt="Cupcakes">
+          <div class="card-body text-center">
+            <h5 class="card-title">Vanilla Cupcakes</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container py-5" id="testimonials">
+    <h2 class="section-title text-center">Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <p class="testimonial">"The best homemade chocolate cake I've ever had!" – Riya T.</p>
+        </div>
+        <div class="carousel-item">
+          <p class="testimonial">"Cookies were a hit at the party. Thank you!" – Arjun M.</p>
+        </div>
+        <div class="carousel-item">
+          <p class="testimonial">"Delicious, affordable, and delivered on time!" – Nisha K.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container py-5" id="contact">
+    <h2 class="section-title text-center">Contact Us</h2>
+    <p class="text-center mb-3">Want to place an order? Message us on WhatsApp or use the form below.</p>
+    <div class="text-center mb-4">
+      <a href="https://wa.me/919999999999" class="btn btn-success">📱 WhatsApp Us</a>
+    </div>
+    <form class="mx-auto" action="https://formspree.io/f/your-form-id" method="POST" style="max-width: 600px;">
+      <div class="mb-3">
+        <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" name="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sweet Delights | Designed with ❤️</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
